@@ -54,16 +54,18 @@ pipeline {
                 failure {
                     emailext attachmentsPattern: '**/*.log',
                     attachLog: true,
-                    body: 'The Security Scan stage has encountered a problem.',
+                    mail to: 'hinataemo12@gmail.com',
                     subject: 'Security Scan Failed',
-                    to: 'hinataemo12@gmail.com'
+                    body: 'The Security Scan stage has encountered a problem.'
+                    
+                    
                 }
                 success {
                     emailext attachmentsPattern: '**/*.log',
                     attachLog: true,
-                    subject: 'Security Scan Succeeded',
-                    body: 'The Security Scan stage has completed successfully.',
-                    to: 'hinataemo12@gmail.com'
+                    mail to: 'hinataemo12@gmail.com',
+                    subject: 'Security Scan Failed',
+                    body: 'The Security Scan stage has encountered a problem.'
                 }
             }
         }
