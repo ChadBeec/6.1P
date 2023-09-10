@@ -28,14 +28,14 @@ pipeline {
                     attachLog: true,
                     body: 'The test stage has encountered a problem.',
                     subject: 'Test Failed',
-                    to: 'chadas.beech@hotmail.com'
+                    to: 'hinataemo12@gmail.com'
                 }
                 success {
                     emailext attachmentsPattern: '**/*.log',
                     attachLog: true,
                     body: 'The test stage has completed succesfully.',
                     subject: 'Test Succeeded',
-                    to: 'chadas.beech@hotmail.com'
+                    to: 'hinataemo12@gmail.com'
                 }
             }
         }
@@ -56,7 +56,7 @@ pipeline {
                     attachLog: true,
                     body: 'The Security Scan stage has encountered a problem.',
                     subject: 'Security Scan Failed',
-                    to: 'chadas.beech@hotmail.com'
+                    to: 'hinataemo12@gmail.com'
                     
                     
                 }
@@ -65,7 +65,7 @@ pipeline {
                     attachLog: true,
                     subject: 'Security Scan Succeeded',
                     body: 'The Security Scan stage has completed successfully.',
-                    to: 'chadas.beech@hotmail.com'
+                    to: 'hinataemo12@gmail.com'
                 }
             }
         }
