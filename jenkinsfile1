@@ -56,7 +56,7 @@ pipeline {
                     attachLog: true,
                     body: 'The Security Scan stage has encountered a problem.',
                     subject: 'Security Scan Failed',
-                    mail to: 'chadas.beech@hotmail.com'
+                    to: 'chadas.beech@hotmail.com'
                     
                     
                 }
@@ -65,7 +65,7 @@ pipeline {
                     attachLog: true,
                     subject: 'Security Scan Succeeded',
                     body: 'The Security Scan stage has completed successfully.',
-                    mail to: 'chadas.beech@hotmail.com'
+                    to: 'chadas.beech@hotmail.com'
                 }
             }
         }
