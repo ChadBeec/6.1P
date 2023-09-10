@@ -54,7 +54,7 @@ pipeline {
                 failure {
                     emailext attachmentsPattern: '**/*.log',
                     attachLog: true,
-                    mail to: 'hinataemo12@gmail.com',
+                    mail to 'hinataemo12@gmail.com',
                     subject: 'Security Scan Failed',
                     body: 'The Security Scan stage has encountered a problem.'
                     
