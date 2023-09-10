@@ -3,7 +3,7 @@ pipeline {
   environment {
     DIRECTORY_PATH = 'C:ProgramData FilesJenkins'
     TESTING_ENVIRONMENT = 'testing-environment'
-    PRODUCTION_ENVIRONMENT = 'Chadas Beech'
+    PRODUCTION_ENVIRONMENT = 'Chadas - Beech'
   }
 
     stages {
