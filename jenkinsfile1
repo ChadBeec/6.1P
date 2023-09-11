@@ -30,13 +30,7 @@ pipeline {
                     subject: 'Test Failed',
                     to: 'hinataemo12@gmail.com'
                 }
-                success {
-                    emailext attachmentsPattern: '**/*.log',
-                    attachLog: true,
-                    body: 'The test stage has completed succesfully.',
-                    subject: 'Test Succeeded',
-                    to: 'hinataemo12@gmail.com'
-                }
+               
             }
         }
 
